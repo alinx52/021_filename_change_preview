@@ -1,0 +1,134 @@
+{
+  "name": "filename_change_preview",
+  "org": "com.alinxs.apps",
+  "title": "Filename Change Preview",
+  "description": "Preview consistent filename changes and detect duplicate results before renaming files.",
+  "korean_summary": "여러 파일명을 붙여 넣고 찾기·바꾸기, 접두사, 접미사 규칙을 적용한 결과와 중복 이름을 기기 안에서 미리 확인하는 오프라인 도구입니다. 파일에 직접 접근하거나 이름을 변경하지 않고 계정이나 서버 저장 없이 작동하며, 작업을 가리지 않는 표준 크기 AdMob 배너 하나만 표시합니다.",
+  "design_system": {
+    "style": "minimal_material",
+    "seed_color": "#3D5A80",
+    "theme_mode": "system",
+    "density": "compact",
+    "corner_style": "medium",
+    "motion": "subtle"
+  },
+  "icon": {
+    "primary": "generic_utility",
+    "version": 1,
+    "secondary": "file_name_rows",
+    "background": "#3D5A80",
+    "foreground": "#FFFFFF",
+    "composition": "centered_safe_zone",
+    "source": null
+  },
+  "requirements": "Build a compact English-first Flutter Android utility whose first phone viewport states that it previews filename changes without accessing files and shows a multiline Current filenames input, Find text, Replace with, Prefix, Suffix, an Apply to name stem only switch enabled by default, and one obvious Preview changes action above the footer and banner. Accept one manually typed or pasted filename per nonblank line, ignore blank lines, trim surrounding whitespace, preserve entered order, and limit input to 500 filenames and 50000 characters. Require at least one filename and at least one effective rule. Apply operations deterministically in this order: replace every non-overlapping case-sensitive occurrence of Find text with Replace with, then add Prefix, then add Suffix. When Apply to name stem only is enabled, treat the final dot as the extension separator only when it is neither the first nor last character, transform only the portion before that dot, and preserve the extension including its original case; otherwise transform the entire filename. Show each original filename and proposed filename in order, Changed: N, Unchanged: N, and Collisions: N. Mark every proposed filename that exactly matches another proposed filename and list its one-based input rows; use exact case-sensitive comparison and make no claims about any operating system's filename rules. If Find text is blank, skip replacement while still allowing a nonempty prefix or suffix. Reject control characters, slash, backslash, proposed empty names, over-limit input, and rules that produce a proposed name longer than 255 Unicode code points with localized inline errors while preserving the last valid preview. Provide Clear input as a secondary action. Do not browse, open, rename, save, upload, or otherwise access files; do not read the clipboard automatically, retain history, infer platform legality, or request storage, file, media, contacts, location, camera, microphone, notification, accessibility-service, or other sensitive permissions. Keep all filenames, rules, and results on-device for the current session, require no account or backend, and allow networking only for the existing Google Mobile Ads AdMob SDK. Preserve the generated design system and buildAppTheme integration. Provide complete ARB translations without English substitutions for en, ko, ja, zh_Hans, zh_Hant, es, fr, de, pt_BR, it, nl, ru, ar, hi, id, and vi, including RTL-safe Arabic layout. Put an immediately usable compact AppBar language menu showing the current locale code and a chevron on the first screen. Put the session-only AppAppearanceMenu immediately to the left of the in-app privacy-policy action in a bottom-centered footer directly above exactly one non-intrusive standard AdSize.banner, exposing only minimal_material, flat, and soft. The banner must never cover or displace the purpose, inputs, primary action, validation, preview rows, collision warnings, or footer. Deterministic widget tests must verify that photo 1.jpg, photo 2.jpg, and photo 3.jpg with Find text photo, Replace with trip, Suffix _web, and stem-only mode produce trip 1_web.jpg, trip 2_web.jpg, and trip 3_web.jpg with Changed: 3 and Collisions: 0; that a.txt and b.txt with Find text a, Replace with b, and whole-name mode report the proposed duplicate b.txt on rows 1 and 2 with Collisions: 1; that a leading-dot name and a trailing-dot name follow the documented separator rule; that blank Find text with a prefix still works; that no effective rule, forbidden characters, empty or oversized proposed names, and input limits show localized validation while preserving the last valid preview; and that switching from English to Arabic translates labels, applies RTL layout without clipping, and preserves filenames, rules, and results.",
+  "planning": {
+    "source": "codex",
+    "priority": 0,
+    "launch_scope": "global",
+    "problem": "Adults preparing batches of filenames need to verify repetitive text changes and spot duplicate outputs before applying those changes in a file manager or desktop tool.",
+    "audience": "Adult global users who manually organize photos, documents, downloads, or project assets and want a private preview of consistent filename changes.",
+    "differentiator": "Unlike the portfolio's line comparison and delimited-text inspection tools, this utility models ordered filename-specific transformations, preserves optional final extensions, and reports collisions between proposed names without reading or modifying any files.",
+    "monetization": "One standard-size AdMob banner remains below the bottom-centered appearance and privacy footer and never covers filenames, rules, validation, preview rows, collision warnings, or the primary action.",
+    "privacy": "No account, backend, server-side input storage, automatic clipboard reading, or file access; pasted filenames and transformation rules remain on device for the current session, with AdMob advertising disclosed separately.",
+    "test_scenarios": "Widget tests cover the exact three-photo transformation, a deterministic duplicate-output collision, final-extension handling, prefix-only operation, all specified validation and size limits, preservation of the last valid preview after errors, English-to-Arabic switching, and RTL layout without clipping."
+  },
+  "deployment": {
+    "play": {
+      "default_language": "en-US",
+      "app_type": "app",
+      "pricing": "free"
+    },
+    "content": {
+      "contains_ads": true,
+      "target_audience": "adults",
+      "user_generated_content": false
+    },
+    "data_safety": {
+      "account_required": false,
+      "app_inputs_server_stored": false,
+      "third_party_sdks": [
+        "admob"
+      ]
+    },
+    "release": {
+      "launch_scope": "global",
+      "internal_test": true,
+      "production_approval_required": true,
+      "initial_production_rollout": 1.0
+    },
+    "admob_secret": "filename_change_preview_admob",
+    "category": "Tools"
+  },
+  "store_screenshots": [
+    {
+      "id": "phone-01",
+      "description": "Clean initial state with the filename input, transformation rules, stem-only option, and primary preview action visible.",
+      "actions": [],
+      "expected_texts": [
+        "Filename Change Preview",
+        "Current filenames",
+        "Find text",
+        "Replace with",
+        "Apply to name stem only",
+        "Preview changes"
+      ],
+      "forbidden_texts": [
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "description": "Preview a stem-only replacement and suffix across three JPEG filenames.",
+      "actions": [
+        {
+          "type": "input",
+          "target": "Current filenames",
+          "text": "photo 1.jpg\nphoto 2.jpg\nphoto 3.jpg"
+        },
+        {
+          "type": "input",
+          "target": "Find text",
+          "text": "photo"
+        },
+        {
+          "type": "input",
+          "target": "Replace with",
+          "text": "trip"
+        },
+        {
+          "type": "input",
+          "target": "Suffix",
+          "text": "_web"
+        },
+        {
+          "type": "tap",
+          "target": "Preview changes"
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        }
+      ],
+      "expected_texts": [
+        "trip 1_web.jpg",
+        "trip 2_web.jpg",
+        "trip 3_web.jpg",
+        "Changed: 3",
+        "Collisions: 0"
+      ],
+      "forbidden_texts": [
+        "Enter at least one filename",
+        "Add at least one change rule",
+        "A proposed filename is invalid",
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    }
+  ]
+}
