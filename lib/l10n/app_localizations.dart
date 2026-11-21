@@ -5,8 +5,21 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_ar.dart';
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_id.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
+import 'app_localizations_nl.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_vi.dart';
+import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -95,38 +108,210 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
+    Locale('ar'),
+    Locale('de'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('hi'),
+    Locale('id'),
+    Locale('it'),
+    Locale('ja'),
     Locale('ko'),
+    Locale('nl'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('vi'),
+    Locale('zh'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
   ];
 
-  /// The app title shown in the system UI.
+  /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
   /// **'Filename Change Preview'**
   String get appTitle;
 
-  /// The short description shown on the home page.
+  /// No description provided for @appDescription.
   ///
   /// In en, this message translates to:
-  /// **'Preview consistent filename changes and detect duplicate results before renaming files.'**
+  /// **'Preview filename changes and detect duplicate results without accessing your files.'**
   String get appDescription;
 
-  /// No description provided for @languageEnglish.
+  /// No description provided for @languageMenuTooltip.
   ///
   /// In en, this message translates to:
-  /// **'English'**
-  String get languageEnglish;
-
-  /// No description provided for @languageKorean.
-  ///
-  /// In en, this message translates to:
-  /// **'한국어'**
-  String get languageKorean;
+  /// **'Choose language'**
+  String get languageMenuTooltip;
 
   /// No description provided for @privacyPolicy.
   ///
   /// In en, this message translates to:
   /// **'Privacy policy'**
   String get privacyPolicy;
+
+  /// No description provided for @appearanceTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose appearance'**
+  String get appearanceTooltip;
+
+  /// No description provided for @appearanceMaterial.
+  ///
+  /// In en, this message translates to:
+  /// **'Material'**
+  String get appearanceMaterial;
+
+  /// No description provided for @appearanceFlat.
+  ///
+  /// In en, this message translates to:
+  /// **'Flat'**
+  String get appearanceFlat;
+
+  /// No description provided for @appearanceSoft.
+  ///
+  /// In en, this message translates to:
+  /// **'Soft'**
+  String get appearanceSoft;
+
+  /// No description provided for @purpose.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview changes without accessing or renaming files. One filename per nonblank line.'**
+  String get purpose;
+
+  /// No description provided for @currentFilenames.
+  ///
+  /// In en, this message translates to:
+  /// **'Current filenames'**
+  String get currentFilenames;
+
+  /// No description provided for @filenamesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'photo 1.jpg\nphoto 2.jpg'**
+  String get filenamesHint;
+
+  /// No description provided for @findText.
+  ///
+  /// In en, this message translates to:
+  /// **'Find text'**
+  String get findText;
+
+  /// No description provided for @replaceWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace with'**
+  String get replaceWith;
+
+  /// No description provided for @prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Prefix'**
+  String get prefix;
+
+  /// No description provided for @suffix.
+  ///
+  /// In en, this message translates to:
+  /// **'Suffix'**
+  String get suffix;
+
+  /// No description provided for @stemOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply to name stem only'**
+  String get stemOnly;
+
+  /// No description provided for @previewChanges.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview changes'**
+  String get previewChanges;
+
+  /// No description provided for @clearInput.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear input'**
+  String get clearInput;
+
+  /// No description provided for @previewResults.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview results'**
+  String get previewResults;
+
+  /// No description provided for @changedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Changed: {count}'**
+  String changedCount(int count);
+
+  /// No description provided for @unchangedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Unchanged: {count}'**
+  String unchangedCount(int count);
+
+  /// No description provided for @collisionsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Collisions: {count}'**
+  String collisionsCount(int count);
+
+  /// No description provided for @rowNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Row {row}'**
+  String rowNumber(int row);
+
+  /// No description provided for @duplicateRows.
+  ///
+  /// In en, this message translates to:
+  /// **'Duplicate proposed name on rows {rows}'**
+  String duplicateRows(String rows);
+
+  /// No description provided for @errorNoFilenames.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter at least one filename.'**
+  String get errorNoFilenames;
+
+  /// No description provided for @errorTooManyCharacters.
+  ///
+  /// In en, this message translates to:
+  /// **'Input cannot exceed 50,000 characters.'**
+  String get errorTooManyCharacters;
+
+  /// No description provided for @errorTooManyFilenames.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter no more than 500 filenames.'**
+  String get errorTooManyFilenames;
+
+  /// No description provided for @errorNoRule.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one change rule.'**
+  String get errorNoRule;
+
+  /// No description provided for @errorForbiddenCharacter.
+  ///
+  /// In en, this message translates to:
+  /// **'Names and rules cannot contain control characters, /, or \\.'**
+  String get errorForbiddenCharacter;
+
+  /// No description provided for @errorEmptyProposedName.
+  ///
+  /// In en, this message translates to:
+  /// **'A rule produces an empty filename.'**
+  String get errorEmptyProposedName;
+
+  /// No description provided for @errorProposedNameTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'A proposed filename exceeds 255 Unicode characters.'**
+  String get errorProposedNameTooLong;
 }
 
 class _AppLocalizationsDelegate
@@ -139,20 +324,87 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'ko'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'ar',
+    'de',
+    'en',
+    'es',
+    'fr',
+    'hi',
+    'id',
+    'it',
+    'ja',
+    'ko',
+    'nl',
+    'pt',
+    'ru',
+    'vi',
+    'zh',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.scriptCode) {
+          case 'Hans':
+            return AppLocalizationsZhHans();
+          case 'Hant':
+            return AppLocalizationsZhHant();
+        }
+        break;
+      }
+  }
+
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'id':
+      return AppLocalizationsId();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'ja':
+      return AppLocalizationsJa();
     case 'ko':
       return AppLocalizationsKo();
+    case 'nl':
+      return AppLocalizationsNl();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'vi':
+      return AppLocalizationsVi();
+    case 'zh':
+      return AppLocalizationsZh();
   }
 
   throw FlutterError(
