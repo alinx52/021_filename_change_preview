@@ -9,7 +9,8 @@ void main() {
     final enFile = File('${l10nDir.path}/app_en.arb');
     expect(enFile.existsSync(), isTrue);
 
-    final enJson = jsonDecode(enFile.readAsStringSync()) as Map<String, dynamic>;
+    final enJson =
+        jsonDecode(enFile.readAsStringSync()) as Map<String, dynamic>;
     final enKeys = enJson.keys.where((k) => !k.startsWith('@')).toSet();
 
     const expectedLocales = [
@@ -35,7 +36,8 @@ void main() {
     for (final loc in expectedLocales) {
       final arbFile = File('${l10nDir.path}/app_$loc.arb');
       expect(arbFile.existsSync(), isTrue, reason: 'Missing ARB for $loc');
-      final arbJson = jsonDecode(arbFile.readAsStringSync()) as Map<String, dynamic>;
+      final arbJson =
+          jsonDecode(arbFile.readAsStringSync()) as Map<String, dynamic>;
       final arbKeys = arbJson.keys.where((k) => !k.startsWith('@')).toSet();
       expect(arbKeys, equals(enKeys), reason: 'Key mismatch in $loc');
     }
