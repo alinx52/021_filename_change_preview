@@ -30,5 +30,19 @@
   "errorNoRule": "Adicione pelo menos uma regra de alteração.",
   "errorForbiddenCharacter": "Nomes e regras não podem conter caracteres de controle, / ou \\.",
   "errorEmptyProposedName": "Uma regra produz um nome de arquivo vazio.",
-  "errorProposedNameTooLong": "Um nome proposto excede 255 caracteres Unicode."
+  "errorProposedNameTooLong": "Um nome proposto excede 255 caracteres Unicode.",
+  "helpTooltip": "Ajuda e guia",
+  "helpTitle": "Guia de Prévia de Alteração de Nomes",
+  "helpProblemSolvedTitle": "Problema resolvido",
+  "helpProblemSolvedContent": "Visualiza alterações em lote de nomes de arquivos (prefixo, sufixo, substituição) e alerta sobre conflitos de nomes.",
+  "helpHowToUseTitle": "Como usar",
+  "helpHowToUseContent": "Cole os nomes originais (um por linha). Configure prefixo, sufixo ou substituição para ver o resultado em tempo real.",
+  "helpReadingResultsTitle": "Leitura dos resultados",
+  "helpReadingResultsContent": "Exibe os nomes originais e alterados lado a lado, conta as alterações e destaca nomes duplicados com alertas.",
+  "helpExampleTitle": "Exemplo",
+  "helpExampleContent": "Original:\nphoto_1.jpg\nphoto_2.jpg\nRegra: Prefixo \"2026_\" e trocar \"_\" por \"-\"\nResultado: 2026_photo-1.jpg, 2026_photo-2.jpg (0 colisões).",
+  "helpLimitsTitle": "Validação e limites",
+  "helpLimitsContent": "Simulador de texto. Não acessa o armazenamento do aparelho nem renomeia arquivos reais no disco.",
+  "helpDataAndPrivacyTitle": "Dados locais e anúncios",
+  "helpDataAndPrivacyContent": "Os nomes de arquivos são processados na memória sem envio ou armazenamento. Um banner do AdMob é exibido abaixo."
 }

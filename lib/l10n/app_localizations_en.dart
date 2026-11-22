@@ -115,4 +115,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'A proposed filename exceeds 255 Unicode characters.';
+
+  @override
+  String get helpTooltip => 'Help & Guide';
+
+  @override
+  String get helpTitle => 'Filename Change Preview Guide';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problem Solved';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Previews batch filename transformations (prefix, suffix, find/replace, numbering) offline and flags potential name collisions before making real changes.';
+
+  @override
+  String get helpHowToUseTitle => 'How to Use';
+
+  @override
+  String get helpHowToUseContent =>
+      'Paste original filenames (one per line). Configure prefix, suffix, text replacement, or case transforms to see the updated output instantly.';
+
+  @override
+  String get helpReadingResultsTitle => 'Reading Results';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Shows side-by-side original and transformed filenames, counts total changed names, and highlights duplicated filenames in warning colors.';
+
+  @override
+  String get helpExampleTitle => 'Example';
+
+  @override
+  String get helpExampleContent =>
+      'Original:\nphoto_1.jpg\nphoto_2.jpg\nRule: Prefix \"2026_\" & Replace \"_\" -> \"-\"\nResult: 2026_photo-1.jpg, 2026_photo-2.jpg (0 collisions).';
+
+  @override
+  String get helpLimitsTitle => 'Validation & Limitations';
+
+  @override
+  String get helpLimitsContent =>
+      'Text string simulator only. Does not access the device file system, read storage permissions, or physically rename files on disk.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Local Data & Ads';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Filenames are parsed purely in-memory on your device without storage access or uploads. A standard AdMob banner is displayed below.';
 }

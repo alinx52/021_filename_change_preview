@@ -117,4 +117,52 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Nama file usulan melebihi 255 karakter Unicode.';
+
+  @override
+  String get helpTooltip => 'Bantuan & Panduan';
+
+  @override
+  String get helpTitle => 'Panduan Pratinjau Pengubahan Nama File';
+
+  @override
+  String get helpProblemSolvedTitle => 'Masalah yang Diatasi';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Melihat pratinjau perubahan nama file massal (awalan, akhiran, cari/ganti) dan mendeteksi duplikat sebelum diterapkan.';
+
+  @override
+  String get helpHowToUseTitle => 'Cara Penggunaan';
+
+  @override
+  String get helpHowToUseContent =>
+      'Tempel nama file asli (satu per baris). Atur awalan, akhiran, atau penggantian teks untuk melihat hasil seketika.';
+
+  @override
+  String get helpReadingResultsTitle => 'Membaca Hasil';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Menampilkan nama file asli dan hasil perubahan secara berdampingan, serta menandai nama yang duplikat.';
+
+  @override
+  String get helpExampleTitle => 'Contoh';
+
+  @override
+  String get helpExampleContent =>
+      'Asli:\nphoto_1.jpg\nphoto_2.jpg\nAturan: Awalan \"2026_\" & ganti \"_\" jadi \"-\"\nHasil: 2026_photo-1.jpg, 2026_photo-2.jpg (0 konflik).';
+
+  @override
+  String get helpLimitsTitle => 'Validasi & Batasan';
+
+  @override
+  String get helpLimitsContent =>
+      'Hanya simulator teks. Tidak mengakses penyimpanan perangkat dan tidak mengubah nama file fisik pada memori.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Data Lokal & Iklan';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Nama file diproses murni di memori perangkat tanpa penyimpanan atau unggahan. Spanduk AdMob ditampilkan di bawah.';
 }

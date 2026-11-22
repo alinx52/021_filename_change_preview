@@ -117,4 +117,52 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Een voorgestelde naam is langer dan 255 Unicode-tekens.';
+
+  @override
+  String get helpTooltip => 'Hulp en gids';
+
+  @override
+  String get helpTitle => 'Gids voor bestandsnaamwijziging';
+
+  @override
+  String get helpProblemSolvedTitle => 'Opgelost probleem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Bekijkt vooraf batch-bestandsnaamwijzigingen (voorvoegsel, achtervoegsel, vervangen) en waarschuwt voor dubbele namen.';
+
+  @override
+  String get helpHowToUseTitle => 'Gebruiksaanwijzing';
+
+  @override
+  String get helpHowToUseContent =>
+      'Plak originele bestandsnamen (één per regel). Stel voorvoegsels, achtervoegsels of vervangingen in voor een directe weergave.';
+
+  @override
+  String get helpReadingResultsTitle => 'Resultaten aflezen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Toont originele en gewijzigde namen naast elkaar, telt het aantal wijzigingen en markeert dubbele namen.';
+
+  @override
+  String get helpExampleTitle => 'Voorbeeld';
+
+  @override
+  String get helpExampleContent =>
+      'Origineel:\nphoto_1.jpg\nphoto_2.jpg\nRegel: Voorvoegsel \"2026_\" & Vervang \"_\" door \"-\"\nResultaat: 2026_photo-1.jpg, 2026_photo-2.jpg (0 conflicten).';
+
+  @override
+  String get helpLimitsTitle => 'Validatie & Beperkingen';
+
+  @override
+  String get helpLimitsContent =>
+      'Uitsluitend tekstsimulator. Heeft geen toegang tot bestandsopslag en hernoemt geen daadwerkelijke bestanden.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale gegevens & Advertenties';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Bestandsnamen worden uitsluitend in het geheugen verwerkt zonder opslag of upload. Onderaan staat een AdMob-banner.';
 }

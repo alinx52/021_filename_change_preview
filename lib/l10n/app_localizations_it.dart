@@ -116,4 +116,52 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Un nome proposto supera 255 caratteri Unicode.';
+
+  @override
+  String get helpTooltip => 'Guida e aiuto';
+
+  @override
+  String get helpTitle => 'Guida all\'anteprima rinomina file';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema risolto';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Mostra un\'anteprima della rinomina file (prefisso, suffisso, sostituisci) e segnala collisioni di nomi prima delle modifiche.';
+
+  @override
+  String get helpHowToUseTitle => 'Come usare';
+
+  @override
+  String get helpHowToUseContent =>
+      'Incolla i nomi di file originali (uno per riga). Configura prefisso, suffisso o testo da sostituire per vedere il risultato.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lettura dei risultati';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra i nomi originali e modificati affiancati, conta le modifiche ed evidenzia eventuali duplicati con avvisi.';
+
+  @override
+  String get helpExampleTitle => 'Esempio';
+
+  @override
+  String get helpExampleContent =>
+      'Originale:\nphoto_1.jpg\nphoto_2.jpg\nRegola: Prefisso \"2026_\" e sostituisci \"_\" con \"-\"\nRisultato: 2026_photo-1.jpg, 2026_photo-2.jpg (0 collisioni).';
+
+  @override
+  String get helpLimitsTitle => 'Validazione e limitazioni';
+
+  @override
+  String get helpLimitsContent =>
+      'Puro simulatore di testo. Non accede al file system del dispositivo né rinomina file reali sul disco.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dati locali e annunci';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'I nomi dei file sono elaborati solo in memoria senza salvataggi o caricamenti. In basso è visibile un banner AdMob.';
 }

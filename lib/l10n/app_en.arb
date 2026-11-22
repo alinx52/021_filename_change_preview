@@ -20,20 +20,64 @@
   "clearInput": "Clear input",
   "previewResults": "Preview results",
   "changedCount": "Changed: {count}",
-  "@changedCount": {"placeholders": {"count": {"type": "int"}}},
+  "@changedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "unchangedCount": "Unchanged: {count}",
-  "@unchangedCount": {"placeholders": {"count": {"type": "int"}}},
+  "@unchangedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "collisionsCount": "Collisions: {count}",
-  "@collisionsCount": {"placeholders": {"count": {"type": "int"}}},
+  "@collisionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "rowNumber": "Row {row}",
-  "@rowNumber": {"placeholders": {"row": {"type": "int"}}},
+  "@rowNumber": {
+    "placeholders": {
+      "row": {
+        "type": "int"
+      }
+    }
+  },
   "duplicateRows": "Duplicate proposed name on rows {rows}",
-  "@duplicateRows": {"placeholders": {"rows": {"type": "String"}}},
+  "@duplicateRows": {
+    "placeholders": {
+      "rows": {
+        "type": "String"
+      }
+    }
+  },
   "errorNoFilenames": "Enter at least one filename.",
   "errorTooManyCharacters": "Input cannot exceed 50,000 characters.",
   "errorTooManyFilenames": "Enter no more than 500 filenames.",
   "errorNoRule": "Add at least one change rule.",
   "errorForbiddenCharacter": "Names and rules cannot contain control characters, /, or \\.",
   "errorEmptyProposedName": "A rule produces an empty filename.",
-  "errorProposedNameTooLong": "A proposed filename exceeds 255 Unicode characters."
+  "errorProposedNameTooLong": "A proposed filename exceeds 255 Unicode characters.",
+  "helpTooltip": "Help & Guide",
+  "helpTitle": "Filename Change Preview Guide",
+  "helpProblemSolvedTitle": "Problem Solved",
+  "helpProblemSolvedContent": "Previews batch filename transformations (prefix, suffix, find/replace, numbering) offline and flags potential name collisions before making real changes.",
+  "helpHowToUseTitle": "How to Use",
+  "helpHowToUseContent": "Paste original filenames (one per line). Configure prefix, suffix, text replacement, or case transforms to see the updated output instantly.",
+  "helpReadingResultsTitle": "Reading Results",
+  "helpReadingResultsContent": "Shows side-by-side original and transformed filenames, counts total changed names, and highlights duplicated filenames in warning colors.",
+  "helpExampleTitle": "Example",
+  "helpExampleContent": "Original:\nphoto_1.jpg\nphoto_2.jpg\nRule: Prefix \"2026_\" & Replace \"_\" -> \"-\"\nResult: 2026_photo-1.jpg, 2026_photo-2.jpg (0 collisions).",
+  "helpLimitsTitle": "Validation & Limitations",
+  "helpLimitsContent": "Text string simulator only. Does not access the device file system, read storage permissions, or physically rename files on disk.",
+  "helpDataAndPrivacyTitle": "Local Data & Ads",
+  "helpDataAndPrivacyContent": "Filenames are parsed purely in-memory on your device without storage access or uploads. A standard AdMob banner is displayed below."
 }

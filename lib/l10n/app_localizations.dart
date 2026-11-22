@@ -312,6 +312,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A proposed filename exceeds 255 Unicode characters.'**
   String get errorProposedNameTooLong;
+
+  /// No description provided for @helpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTooltip;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Filename Change Preview Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpProblemSolvedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem Solved'**
+  String get helpProblemSolvedTitle;
+
+  /// No description provided for @helpProblemSolvedContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Previews batch filename transformations (prefix, suffix, find/replace, numbering) offline and flags potential name collisions before making real changes.'**
+  String get helpProblemSolvedContent;
+
+  /// No description provided for @helpHowToUseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to Use'**
+  String get helpHowToUseTitle;
+
+  /// No description provided for @helpHowToUseContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste original filenames (one per line). Configure prefix, suffix, text replacement, or case transforms to see the updated output instantly.'**
+  String get helpHowToUseContent;
+
+  /// No description provided for @helpReadingResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Results'**
+  String get helpReadingResultsTitle;
+
+  /// No description provided for @helpReadingResultsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Shows side-by-side original and transformed filenames, counts total changed names, and highlights duplicated filenames in warning colors.'**
+  String get helpReadingResultsContent;
+
+  /// No description provided for @helpExampleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Example'**
+  String get helpExampleTitle;
+
+  /// No description provided for @helpExampleContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Original:\nphoto_1.jpg\nphoto_2.jpg\nRule: Prefix \"2026_\" & Replace \"_\" -> \"-\"\nResult: 2026_photo-1.jpg, 2026_photo-2.jpg (0 collisions).'**
+  String get helpExampleContent;
+
+  /// No description provided for @helpLimitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation & Limitations'**
+  String get helpLimitsTitle;
+
+  /// No description provided for @helpLimitsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Text string simulator only. Does not access the device file system, read storage permissions, or physically rename files on disk.'**
+  String get helpLimitsContent;
+
+  /// No description provided for @helpDataAndPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Data & Ads'**
+  String get helpDataAndPrivacyTitle;
+
+  /// No description provided for @helpDataAndPrivacyContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Filenames are parsed purely in-memory on your device without storage access or uploads. A standard AdMob banner is displayed below.'**
+  String get helpDataAndPrivacyContent;
 }
 
 class _AppLocalizationsDelegate

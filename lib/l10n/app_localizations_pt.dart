@@ -117,6 +117,54 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Um nome proposto excede 255 caracteres Unicode.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia de Prévia de Alteração de Nomes';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Visualiza alterações em lote de nomes de arquivos (prefixo, sufixo, substituição) e alerta sobre conflitos de nomes.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole os nomes originais (um por linha). Configure prefixo, sufixo ou substituição para ver o resultado em tempo real.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe os nomes originais e alterados lado a lado, conta as alterações e destaca nomes duplicados com alertas.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Original:\nphoto_1.jpg\nphoto_2.jpg\nRegra: Prefixo \"2026_\" e trocar \"_\" por \"-\"\nResultado: 2026_photo-1.jpg, 2026_photo-2.jpg (0 colisões).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Simulador de texto. Não acessa o armazenamento do aparelho nem renomeia arquivos reais no disco.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Os nomes de arquivos são processados na memória sem envio ou armazenamento. Um banner do AdMob é exibido abaixo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -231,4 +279,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get errorProposedNameTooLong =>
       'Um nome proposto excede 255 caracteres Unicode.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia de Prévia de Alteração de Nomes';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Visualiza alterações em lote de nomes de arquivos (prefixo, sufixo, substituição) e alerta sobre conflitos de nomes.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole os nomes originais (um por linha). Configure prefixo, sufixo ou substituição para ver o resultado em tempo real.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe os nomes originais e alterados lado a lado, conta as alterações e destaca nomes duplicados com alertas.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Original:\nphoto_1.jpg\nphoto_2.jpg\nRegra: Prefixo \"2026_\" e trocar \"_\" por \"-\"\nResultado: 2026_photo-1.jpg, 2026_photo-2.jpg (0 colisões).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Simulador de texto. Não acessa o armazenamento do aparelho nem renomeia arquivos reais no disco.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Os nomes de arquivos são processados na memória sem envio ou armazenamento. Um banner do AdMob é exibido abaixo.';
 }

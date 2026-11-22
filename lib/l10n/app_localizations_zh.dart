@@ -111,6 +111,54 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errorProposedNameTooLong => '拟用文件名超过 255 个 Unicode 字符。';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => '文件名重命名预览指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在实际修改磁盘文件之前，离线预览批量文件名添加前缀、后缀、替换文本或编号后的效果，提前发现重名冲突。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '每行输入一个原始文件名。配置前缀、后缀、查找和替换内容或大小写转换，即可实时查看预览。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '左右并排对比原始与修改后的文件名，统计受影响数量，并在发生重名冲突时以醒目警告颜色标出。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '原始:\nphoto_1.jpg\nphoto_2.jpg\n规则: 添加前缀 \"2026_\" 并将 \"_\" 替换为 \"-\"\n结果: 2026_photo-1.jpg, 2026_photo-2.jpg (0项冲突)。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '仅为纯文本字符串模拟工具。不申请设备存储权限，不访问本地文件系统，不实际重命名磁盘上的真实文件。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有文件名仅在内存中处理，绝不上传或存储。屏幕下方展示标准Google AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -219,6 +267,54 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get errorProposedNameTooLong => '拟用文件名超过 255 个 Unicode 字符。';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => '文件名重命名预览指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在实际修改磁盘文件之前，离线预览批量文件名添加前缀、后缀、替换文本或编号后的效果，提前发现重名冲突。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '每行输入一个原始文件名。配置前缀、后缀、查找和替换内容或大小写转换，即可实时查看预览。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '左右并排对比原始与修改后的文件名，统计受影响数量，并在发生重名冲突时以醒目警告颜色标出。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '原始:\nphoto_1.jpg\nphoto_2.jpg\n规则: 添加前缀 \"2026_\" 并将 \"_\" 替换为 \"-\"\n结果: 2026_photo-1.jpg, 2026_photo-2.jpg (0项冲突)。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '仅为纯文本字符串模拟工具。不申请设备存储权限，不访问本地文件系统，不实际重命名磁盘上的真实文件。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有文件名仅在内存中处理，绝不上传或存储。屏幕下方展示标准Google AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -327,4 +423,50 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get errorProposedNameTooLong => '建議檔名超過 255 個 Unicode 字元。';
+
+  @override
+  String get helpTooltip => '說明與指南';
+
+  @override
+  String get helpTitle => '檔名批次修改預覽指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解決的問題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在實際修改檔案前，離線預覽批次檔名新增前綴、後綴、尋找取代或編號後的結果，提前揪出命名衝突。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent => '逐行輸入原始檔名。設定欲新增的前綴、後綴、尋找與取代文字，即可即時查看預覽結果。';
+
+  @override
+  String get helpReadingResultsTitle => '查看結果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '並列對比修改前後的檔名，統計變更數量，並在產生重複檔名時以顯眼顏色標記警示。';
+
+  @override
+  String get helpExampleTitle => '範例';
+
+  @override
+  String get helpExampleContent =>
+      '原始:\nphoto_1.jpg\nphoto_2.jpg\n規則: 新增前綴 \"2026_\" 並將 \"_\" 取代為 \"-\"\n結果: 2026_photo-1.jpg, 2026_photo-2.jpg (0項衝突)。';
+
+  @override
+  String get helpLimitsTitle => '驗證與限制';
+
+  @override
+  String get helpLimitsContent => '僅為純文字字串模擬工具。不請求裝置儲存權限，不存取檔案系統，不實際變更磁碟檔案名稱。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本機資料與廣告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有檔名僅在記憶體中處理，絕不上傳或儲存。螢幕下方顯示標準Google AdMob橫幅廣告。';
 }

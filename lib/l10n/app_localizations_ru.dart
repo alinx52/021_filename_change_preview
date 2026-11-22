@@ -116,4 +116,53 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Предлагаемое имя превышает 255 символов Unicode.';
+
+  @override
+  String get helpTooltip => 'Справка и руководство';
+
+  @override
+  String get helpTitle =>
+      'Руководство по предварительному просмотру имен файлов';
+
+  @override
+  String get helpProblemSolvedTitle => 'Решаемая задача';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Предварительно просматривает массовое переименование файлов (префикс, суффикс, замена) и предупреждает о совпадениях имен.';
+
+  @override
+  String get helpHowToUseTitle => 'Как использовать';
+
+  @override
+  String get helpHowToUseContent =>
+      'Вставьте исходные имена файлов (по одному на строку). Настройте префикс, суффикс или замену для мгновенного просмотра.';
+
+  @override
+  String get helpReadingResultsTitle => 'Чтение результатов';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Показывает исходные и измененные имена рядом, подсчитывает число изменений и выделяет совпадения цветом.';
+
+  @override
+  String get helpExampleTitle => 'Пример';
+
+  @override
+  String get helpExampleContent =>
+      'Исходные:\nphoto_1.jpg\nphoto_2.jpg\nПравило: Префикс \"2026_\" и замена \"_\" на \"-\"\nРезультат: 2026_photo-1.jpg, 2026_photo-2.jpg (0 конфликтов).';
+
+  @override
+  String get helpLimitsTitle => 'Проверка и ограничения';
+
+  @override
+  String get helpLimitsContent =>
+      'Симулятор работы с текстом. Не запрашивает доступ к хранилищу и не изменяет реальные файлы на диске.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Локальные данные и реклама';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Имена файлов обрабатываются в памяти устройства без передачи на серверы. Внизу отображается баннер AdMob.';
 }

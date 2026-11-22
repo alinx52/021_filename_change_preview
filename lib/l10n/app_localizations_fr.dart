@@ -118,4 +118,52 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Un nom proposé dépasse 255 caractères Unicode.';
+
+  @override
+  String get helpTooltip => 'Aide et guide';
+
+  @override
+  String get helpTitle => 'Guide de prévisualisation de renommage';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problème résolu';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Prévisualise le renommage en masse (préfixe, suffixe, remplacement) et signale les collisions de noms avant modification.';
+
+  @override
+  String get helpHowToUseTitle => 'Mode d\'emploi';
+
+  @override
+  String get helpHowToUseContent =>
+      'Collez les noms d\'origine (un par ligne). Configurez préfixe, suffixe ou remplacement de texte pour voir le résultat en direct.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lecture des résultats';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Affiche les noms avant/après côte à côte, compte les modifications et met en évidence les doublons en couleur d\'alerte.';
+
+  @override
+  String get helpExampleTitle => 'Exemple';
+
+  @override
+  String get helpExampleContent =>
+      'Original :\nphoto_1.jpg\nphoto_2.jpg\nRègle : Préfixe \"2026_\" et remplacer \"_\" par \"-\"\nRésultat : 2026_photo-1.jpg, 2026_photo-2.jpg (0 collision).';
+
+  @override
+  String get helpLimitsTitle => 'Validations et limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Simulateur de texte uniquement. N\'accède pas au système de fichiers et ne renomme aucun fichier réel.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Données locales et publicités';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Les noms de fichiers sont traités uniquement en mémoire sans téléversement. Une bannière AdMob est affichée en bas.';
 }

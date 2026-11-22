@@ -117,4 +117,52 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Ein vorgeschlagener Dateiname überschreitet 255 Unicode-Zeichen.';
+
+  @override
+  String get helpTooltip => 'Hilfe & Anleitung';
+
+  @override
+  String get helpTitle => 'Dateinamen-Vorschau-Leitfaden';
+
+  @override
+  String get helpProblemSolvedTitle => 'Gelöstes Problem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Ermöglicht eine Offline-Vorschau von Dateinamen-Änderungen (Präfix, Suffix, Ersetzen) und erkennt Namenskonflikte im Voraus.';
+
+  @override
+  String get helpHowToUseTitle => 'Bedienung';
+
+  @override
+  String get helpHowToUseContent =>
+      'Fügen Sie Dateinamen ein (einer pro Zeile). Konfigurieren Sie Präfix, Suffix oder Textersetzung für eine sofortige Vorschau.';
+
+  @override
+  String get helpReadingResultsTitle => 'Ergebnisse verstehen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Zeigt ursprüngliche und geänderte Namen nebeneinander, zählt Änderungen und hebt Namensdopplungen farblich hervor.';
+
+  @override
+  String get helpExampleTitle => 'Beispiel';
+
+  @override
+  String get helpExampleContent =>
+      'Original:\nphoto_1.jpg\nphoto_2.jpg\nRegel: Präfix \"2026_\" & Ersetze \"_\" durch \"-\"\nErgebnis: 2026_photo-1.jpg, 2026_photo-2.jpg (0 Konflikte).';
+
+  @override
+  String get helpLimitsTitle => 'Validierung & Grenzen';
+
+  @override
+  String get helpLimitsContent =>
+      'Reines Textsimulationswerkzeug. Greift nicht auf den Speicher zu und benennt keine realen Dateien auf der Festplatte um.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale Daten & Werbung';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Dateinamen werden ausschließlich im Arbeitsspeicher verarbeitet und nicht hochgeladen. Unten wird ein AdMob-Banner angezeigt.';
 }

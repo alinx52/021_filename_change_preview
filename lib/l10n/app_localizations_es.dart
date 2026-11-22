@@ -118,4 +118,52 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Un nombre propuesto supera los 255 caracteres Unicode.';
+
+  @override
+  String get helpTooltip => 'Ayuda y guía';
+
+  @override
+  String get helpTitle => 'Guía de vista previa de cambio de nombres';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema que resuelve';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Previsualiza cambios masivos de nombres de archivo (prefijo, sufijo, reemplazar) y detecta duplicados antes de aplicarlos.';
+
+  @override
+  String get helpHowToUseTitle => 'Cómo usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Pega los nombres de archivo originales (uno por línea). Configura prefijo, sufijo o texto de reemplazo para ver el resultado en vivo.';
+
+  @override
+  String get helpReadingResultsTitle => 'Interpretación de resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Muestra nombres originales y modificados en paralelo, cuenta los cambios y resalta duplicados con advertencias.';
+
+  @override
+  String get helpExampleTitle => 'Ejemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Original:\nphoto_1.jpg\nphoto_2.jpg\nRegla: Prefijo \"2026_\" y reemplazar \"_\" por \"-\"\nResultado: 2026_photo-1.jpg, 2026_photo-2.jpg (0 colisiones).';
+
+  @override
+  String get helpLimitsTitle => 'Validaciones y límites';
+
+  @override
+  String get helpLimitsContent =>
+      'Simulador de texto únicamente. No accede al almacenamiento del dispositivo ni renombra archivos reales en disco.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Datos locales y anuncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Los nombres de archivo se procesan en la memoria sin guardarse ni subirse. Se muestra un banner estándar de AdMob.';
 }

@@ -116,4 +116,52 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'Tên tệp đề xuất vượt quá 255 ký tự Unicode.';
+
+  @override
+  String get helpTooltip => 'Trợ giúp & Hướng dẫn';
+
+  @override
+  String get helpTitle => 'Hướng dẫn xem trước đổi tên tệp';
+
+  @override
+  String get helpProblemSolvedTitle => 'Vấn đề giải quyết';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Xem trước các thay đổi đổi tên tệp hàng loạt (tiền tố, hậu tố, thay thế) và cảnh báo trùng tên trước khi thực hiện.';
+
+  @override
+  String get helpHowToUseTitle => 'Cách sử dụng';
+
+  @override
+  String get helpHowToUseContent =>
+      'Dán tên tệp gốc (mỗi tệp một dòng). Cấu hình tiền tố, hậu tố hoặc thay thế văn bản để xem kết quả cập nhật ngay lập tức.';
+
+  @override
+  String get helpReadingResultsTitle => 'Đọc kết quả';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Hiển thị song song tên tệp gốc và tên tệp đã đổi, đếm số lượng thay đổi và làm nổi bật các tên bị trùng lặp.';
+
+  @override
+  String get helpExampleTitle => 'Ví dụ';
+
+  @override
+  String get helpExampleContent =>
+      'Gốc:\nphoto_1.jpg\nphoto_2.jpg\nQuy tắc: Tiền tố \"2026_\" & Thay \"_\" bằng \"-\"\nKết quả: 2026_photo-1.jpg, 2026_photo-2.jpg (0 xung đột).';
+
+  @override
+  String get helpLimitsTitle => 'Xác thực & Giới hạn';
+
+  @override
+  String get helpLimitsContent =>
+      'Chỉ là công cụ mô phỏng chuỗi văn bản. Không truy cập bộ nhớ thiết bị hoặc đổi tên tệp thực tế trên đĩa.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dữ liệu cục bộ & Quảng cáo';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tên tệp được xử lý hoàn toàn trong bộ nhớ thiết bị mà không cần truy cập bộ nhớ. Biểu ngữ AdMob hiển thị ở dưới.';
 }

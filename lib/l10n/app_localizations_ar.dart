@@ -114,4 +114,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get errorProposedNameTooLong => 'يتجاوز اسم مقترح 255 محرف Unicode.';
+
+  @override
+  String get helpTooltip => 'المساعدة والدليل';
+
+  @override
+  String get helpTitle => 'دليل معاينة تغيير أسماء الملفات';
+
+  @override
+  String get helpProblemSolvedTitle => 'المشكلة التي يعالجها';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'يعاين التغييرات المجمعة لأسماء الملفات (بادئة، لاحقة، استبدال، ترقيم) ويكتشف تعارضات الأسماء المكررة مسبقًا.';
+
+  @override
+  String get helpHowToUseTitle => 'طريقة الاستخدام';
+
+  @override
+  String get helpHowToUseContent =>
+      'الصق أسماء الملفات الأصلية (اسم لكل سطر). اضبط البادئة أو اللاحقة أو نص الاستبدال لمعاينة النتيجة فورًا.';
+
+  @override
+  String get helpReadingResultsTitle => 'قراءة النتائج';
+
+  @override
+  String get helpReadingResultsContent =>
+      'يعرض أسماء الملفات الأصلية والمعدلة جنبًا إلى جنب، ويحسب عدد التغييرات، ويميز الأسماء المكررة بتحذيرات.';
+
+  @override
+  String get helpExampleTitle => 'مثال توضيحي';
+
+  @override
+  String get helpExampleContent =>
+      'الأصل:\nphoto_1.jpg\nphoto_2.jpg\nالقاعدة: إضافة البادئة \"2026_\" واستبدال \"_\" بـ \"-\"\nالنتيجة: 2026_photo-1.jpg, 2026_photo-2.jpg (بدون تعارض).';
+
+  @override
+  String get helpLimitsTitle => 'التحقق والقيود';
+
+  @override
+  String get helpLimitsContent =>
+      'محاكي نصوص فقط. لا يصل إلى نظام الملفات في الجهاز ولا يعيد تسمية الملفات الفعلية على وحدة التخزين.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'البيانات المحلية والإعلانات';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'تتم معالجة أسماء الملفات في الذاكرة فقط دون تخزين أو رفع. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة.';
 }

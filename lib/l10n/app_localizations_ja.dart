@@ -112,4 +112,52 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get errorProposedNameTooLong => '変更後のファイル名がUnicode 255文字を超えています。';
+
+  @override
+  String get helpTooltip => 'ヘルプと使い方';
+
+  @override
+  String get helpTitle => 'ファイル名変更プレビューガイド';
+
+  @override
+  String get helpProblemSolvedTitle => '解決する課題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '実際のファイルを変更することなく、接頭辞、接尾辞、文字列置換、連番付与などのルール適用結果と重複の有無を安全に確認します。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '元のファイル名を1行に1つずつ入力します。追加する接頭辞、接尾辞、置換文字列などを指定すると即座に結果が反映されます。';
+
+  @override
+  String get helpReadingResultsTitle => '結果の見方';
+
+  @override
+  String get helpReadingResultsContent =>
+      '変更前後のファイル名が並んで表示され、変更件数および重複名が発生している場合の警告バッジを確認できます。';
+
+  @override
+  String get helpExampleTitle => '具体例';
+
+  @override
+  String get helpExampleContent =>
+      '元:\nphoto_1.jpg\nphoto_2.jpg\nルール: 接頭辞「2026_」追加、「_」を「-」に置換\n結果: 2026_photo-1.jpg, 2026_photo-2.jpg (重複 0件)。';
+
+  @override
+  String get helpLimitsTitle => '検証と制限事項';
+
+  @override
+  String get helpLimitsContent =>
+      'テキストシミュレーション専用ツールです。端末のファイルストレージにアクセスせず、実際のファイル名を変更することはありません。';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'ローカルデータと広告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '入力されたファイル名はメモリ内でのみ処理され、外部への送信は行われません。画面下部に標準AdMobバナーが表示されます。';
 }

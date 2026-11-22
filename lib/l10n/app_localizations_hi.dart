@@ -116,4 +116,52 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get errorProposedNameTooLong =>
       'प्रस्तावित फ़ाइल नाम 255 Unicode वर्णों से अधिक है।';
+
+  @override
+  String get helpTooltip => 'सहायता और मार्गदर्शिका';
+
+  @override
+  String get helpTitle => 'फ़ाइल नाम परिवर्तन पूर्वावलोकन मार्गदर्शिका';
+
+  @override
+  String get helpProblemSolvedTitle => 'समस्या का समाधान';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'वास्तविक बदलाव करने से पहले फ़ाइल नाम परिवर्तनों (उपसर्ग, प्रत्यय, खोजें/बदलें) का पूर्वावलोकन करता है और टकरावों की पहचान करता है।';
+
+  @override
+  String get helpHowToUseTitle => 'उपयोग कैसे करें';
+
+  @override
+  String get helpHowToUseContent =>
+      'मूल फ़ाइल नाम चिपकाएं (प्रति पंक्ति एक)। पूर्वावलोकन देखने के लिए उपसर्ग, प्रत्यय, या पाठ प्रतिस्थापन कॉन्फ़िगर करें।';
+
+  @override
+  String get helpReadingResultsTitle => 'परिणाम कैसे समझें';
+
+  @override
+  String get helpReadingResultsContent =>
+      'मूल और परिवर्तित फ़ाइल नामों को साथ-साथ दिखाता है, बदले गए नामों की गणना करता है और डुप्लिकेट नामों को हाइलाइट करता है।';
+
+  @override
+  String get helpExampleTitle => 'उदाहरण';
+
+  @override
+  String get helpExampleContent =>
+      'मूल:\nphoto_1.jpg\nphoto_2.jpg\nनियम: उपसर्ग \"2026_\" और \"_\" को \"-\" से बदलें\nपरिणाम: 2026_photo-1.jpg, 2026_photo-2.jpg (0 टकराव)।';
+
+  @override
+  String get helpLimitsTitle => 'सत्यापन और सीमाएं';
+
+  @override
+  String get helpLimitsContent =>
+      'केवल टेक्स्ट स्ट्रिंग सिम्युलेटर है। डिवाइस फ़ाइल सिस्टम तक नहीं पहुंचता है और न ही डिस्क पर फ़ाइलों का नाम बदलता है।';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'स्थानीय डेटा और विज्ञापन';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'फ़ाइल नाम बिना स्टोरेज एक्सेस या अपलोड के डिवाइस पर मेमोरी में संसाधित होते हैं। नीचे एक AdMob बैनर दिखाया गया है।';
 }
